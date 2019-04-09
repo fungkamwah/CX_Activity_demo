@@ -1,5 +1,3 @@
-# CX_Activity_demo
-Android上手练习4.四大组件（一）Activity
 前面说过Android应用中，一个Activity可视作为应用的一个介面，实际上Activity是安卓应用的四大组件之一，也是最常用的组件，因为做安卓应用基本上离不开Activity。
 
 本节就针对Activity做一些基础练习。
@@ -7,13 +5,13 @@ Android上手练习4.四大组件（一）Activity
 ## 1.1 新建项目
 新建一个有Empty Activity的项目。
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-093415.png)
+![image](http://youdao.mikezz.cn/QQ20190321-093415.png-wardo)
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-093530.png)
+![image](http://youdao.mikezz.cn/QQ20190321-093530.png-wardo)
 
 项目已有一个Activity。
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-093813.png)
+![image](http://youdao.mikezz.cn/QQ20190321-093813.png-wardo)
 
 
 ## 1.2 Activity的生命周期
@@ -89,17 +87,17 @@ public class MainActivity extends AppCompatActivity {
 
 运行项目，应用打开后，按home键回到桌面，再点击应用图标打开应用，观察TextView内容变化。
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-101238.png)
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-101353.png)
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-101453.png)
+![image](http://youdao.mikezz.cn/QQ20190321-101238.png-wardo)
+![image](http://youdao.mikezz.cn/QQ20190321-101353.png-wardo)
+![image](http://youdao.mikezz.cn/QQ20190321-101453.png-wardo)
 
 
 ## 1.3 Activity跳转
 之前的练习都是在一个Activity中进行，一个安卓应用往往都会有多个界面，那么就会有多个Activity。
 
 新建一个Activity。
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-102025.png)
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-102206.png)
+![image](http://youdao.mikezz.cn/QQ20190321-102025.png-wardo)
+![image](http://youdao.mikezz.cn/QQ20190321-102206.png-wardo)
 
 编辑这个类。
 ```
@@ -315,9 +313,9 @@ public class MainActivity extends AppCompatActivity {
 
 重新运行项目。点击按钮跳转到第二个Activity。SecondActivity的按钮还没绑定事件，点击没反应。可以按手机的返回键，回退到上一个Activity。
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-104429.png)
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-104725.png)
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-105425.png)
+![image](http://youdao.mikezz.cn/QQ20190321-104429.png-wardo)
+![image](http://youdao.mikezz.cn/QQ20190321-104725.png-wardo)
+![image](http://youdao.mikezz.cn/QQ20190321-105425.png-wardo)
 
 看到Toast内容『我要销毁了』，说明SecondActivity已被销毁，执行onDestroy方法，它的生命周期结束了。
 对于MainActivity，它的onRestart，onStart，onResume方法顺序被执行。
@@ -495,13 +493,13 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
 运行项目，点击跳转到SecondActivity看到已接收到传过来的msg。
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-112832.png)
+![image](http://youdao.mikezz.cn/QQ20190321-112832.png-wardo)
 
 
 在输入框输入内容并返回给MainActivity。
 
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-113303.png)
-![image](http://po1d0nnr5.bkt.clouddn.com/QQ20190321-113527.png)
+![image](http://youdao.mikezz.cn/QQ20190321-113303.png-wardo)
+![image](http://youdao.mikezz.cn/QQ20190321-113527.png-wardo)
 
 
 
